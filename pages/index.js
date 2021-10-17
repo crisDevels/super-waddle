@@ -1,10 +1,14 @@
 import React from 'react'
+import { NavBar } from './components/navbar';
 
 const Index = () => {
   return (
-    <div>
-      <h2>Hello index</h2>
-    </div>
+    <>
+      <NavBar />
+      <div>
+        <h2>Hello index</h2>
+      </div>
+    </>
   )
 }
 
