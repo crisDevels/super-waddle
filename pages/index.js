@@ -2,6 +2,9 @@ import React from 'react'
 import Layout from '../components/layout'
 import { useAPI } from '../hooks/useAPI'
 import Link from 'next/link'
+import Image from 'next/image'
+
+import styles from '../styles/index.module.scss'
 
 export default function Index () {
   const { data, isLoading, isError } = useAPI('/api/projects')
@@ -12,17 +15,31 @@ export default function Index () {
   return (
     <>
       <Layout title='Projects'>
-        <ul>
-          {data.map(project => {
-            return (
-              <li key={project.id}>
-                <Link href={'/proyects/' + project.handle}>
-                  <a>{project.name}</a>
-                </Link>
-              </li>
-            )
-          })}
-        </ul>
+        
+        <div>
+          <ul className={styles.slide_projects}>
+
+            {data.map(project => {
+              return (
+                <li key={project.id}>
+                  <Link href={'/proyects/' + project.handle}>
+                    <div>
+                      <Image
+                        src={project.imageFeature}
+                        alt={"Principal" + project.name}
+                        width={500}
+                        height={500}
+                        />
+                      <a>{project.name}</a>
+                    </div>
+                  </Link>
+                </li>
+              )
+            })}
+
+          </ul>
+        </div>
+
       </Layout>
     </>
   )

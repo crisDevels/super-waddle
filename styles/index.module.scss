@@ -1,0 +1,29 @@
+@use 'base';
+
+.slide_projects {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+
+  li {
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+
+  a {
+    font-family: base.$font-titles;
+    color: base.$principal-color;
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 600px) {
+    a {
+      font-size: 11px;
+    }
+  }
+
+}

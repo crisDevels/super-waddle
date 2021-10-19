@@ -23,11 +23,13 @@ export const projects = [
     handle: "mina-storm",
     name: "Mina Storm",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo, nibh sollicitudin dignissim sodales, turpis erat suscipit turpis, nec maximus ligula purus ac nisi. Nam volutpat tellus ut odio tristique dapibus. Sed in egestas turpis, vitae congue velit. Aenean sagittis metus ullamcorper libero tincidunt, id euismod neque finibus. Aenean semper consectetur iaculis. Quisque metus nulla, tincidunt viverra cursus quis, lobortis in nibh. Vivamus tincidunt eros leo, maximus dapibus orci accumsan id. Mauris quis sapien risus. In erat lectus, bibendum ut ornare sit amet, blandit vitae magna",
+    imageFeature: "/projects/mina-storm/principal-mina.jpg",
   },
   {
     id: 2,
     handle: "panda-tea",
     name: "Panda Tea",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo, nibh sollicitudin dignissim sodales, turpis erat suscipit turpis, nec maximus ligula purus ac nisi. Nam volutpat tellus ut odio tristique dapibus. Sed in egestas turpis, vitae congue velit. Aenean sagittis metus ullamcorper libero tincidunt, id euismod neque finibus. Aenean semper consectetur iaculis. Quisque metus nulla, tincidunt viverra cursus quis, lobortis in nibh. Vivamus tincidunt eros leo, maximus dapibus orci accumsan id. Mauris quis sapien risus. In erat lectus, bibendum ut ornare sit amet, blandit vitae magna",
+    imageFeature: "/projects/panda-tea/principal-panda.jpg",
   },
 ]

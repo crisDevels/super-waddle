@@ -1,16 +1,30 @@
 import React from "react";
 import Link from "next/link"
+import styles from "../styles/layout.module.scss"
 
 export const NavBar = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link href="/about">
-            <a>About</a>
+    <nav className={`${styles.nav}`}>
+      <div className={`${styles.wrapper} ${styles.flex}`}>
+
+        <div>
+          <Link href="/">
+            <a title="crisDevels">
+              crisDevels
+            </a>
           </Link>
-        </li>
-      </ul>
+        </div>
+
+        <div>
+          <div>
+            <Link href="/about">
+              <a title="about">about</a>
+            </Link>
+          </div>
+        </div>
+
+      </div>
+      
     </nav>
   )
 }

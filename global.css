@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Dreamscape';
+  src: url('/fonts/dreamscape/Dreamscape.woff2') format('woff2'),
+       url('/fonts/dreamscape/Dreamscape.woff') format('woff'),
+       url('/fonts/dreamscape/Dreamscape.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dreamscape Sans';
+  src: url('/fonts/dreamscape/DreamscapeSans.woff2') format('woff2'),
+       url('/fonts/dreamscape/DreamscapeSans.woff') format('woff'),
+       url('/fonts/dreamscape/DreamscapeSans.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

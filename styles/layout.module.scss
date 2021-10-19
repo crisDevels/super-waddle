@@ -1,0 +1,30 @@
+@use 'base';
+
+.main {
+  background: base.$principal-color;
+}
+
+.nav {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  padding-top: 35px;
+  left: 0;
+  top: 0;
+  font-family: base.$font-subtitles;
+
+  a {
+    color: base.$principal-color;
+    mix-blend-mode: difference;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
